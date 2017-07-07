@@ -5,8 +5,8 @@ Este é um repo de estudo sobre testes unitários. Vamos criar
 em conjunto várias estratégias de teste para um único problema.
 
 Crie o seu programa e seus testes ou leia o que as outras pessoas
-criaram. O importante é discutirmos. Vá para <o canal gitter> para
-nos encontrar.
+criaram. O importante é discutirmos. Vá para
+https://gitter.im/como-testar/Lobby para nos encontrar.
 
 Problema
 -----
