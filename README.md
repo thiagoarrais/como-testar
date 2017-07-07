@@ -1,6 +1,8 @@
 Como testar
 ========
 
+[![Join the chat at https://gitter.im/como-testar/Lobby](https://badges.gitter.im/como-testar/Lobby.svg)](https://gitter.im/como-testar/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Este é um repo de estudo sobre testes unitários. Vamos criar
 em conjunto várias estratégias de teste para um único problema.
 
