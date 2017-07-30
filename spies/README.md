@@ -15,7 +15,6 @@ Comandos para executar os testes
 ======
 
 ```
-cd spies
 npm install
 npm run test
 ```
