@@ -23,5 +23,5 @@ npm run test
 Observações 
 ======
 
-* Os resultados são exibido em uma janela do browser.
+* Os resultados são exibidos em uma janela do browser.
 * Código-fonte do teste: [json-router.spec.ts](src/app/json-router.spec.ts) 
