@@ -2,7 +2,7 @@ import { JsonRouter } from './json-router';
 import { JsonProcessor, EvenJsonProcessor, OddJsonProcessor } from './json-processor';
 import { JsonMessage } from './json-message';
 
-describe('JsonRouter Tests', () => {
+describe('JSON Router Testing', () => {
 
   let router: JsonRouter;
   let evenProcessor: EvenJsonProcessor;
@@ -18,11 +18,11 @@ describe('JsonRouter Tests', () => {
     router.addProcessor(oddProcessor);
   });
 
-  it('Should create router', () => {
+  it('JSON Router should be created', () => {
     expect(router).toBeDefined();
   });
 
-  describe('Should trigger right processor', () => {
+  describe('JSON Router triggers right processors', () => {
 
     beforeEach(() => {
       spyOn(evenProcessor, 'match').and.callThrough();
@@ -32,7 +32,7 @@ describe('JsonRouter Tests', () => {
       spyOn(oddProcessor, 'process').and.callThrough();
     });
 
-    it('Should call even processor', () => {
+    it('JSON Message with even code calls even processor', () => {
         let message = { code: 10, content: 'ten is even'};
         
         router.process(message); 
@@ -43,7 +43,7 @@ describe('JsonRouter Tests', () => {
         expect(evenProcessor.process).toHaveBeenCalledWith(message);
     });
 
-    it('Should call odd processor', () => {
+    it('JSON Message with odd code calls odd processor', () => {
         let message = { code: 5, content: 'five is odd' };
         
         let result = router.process(message);        
