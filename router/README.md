@@ -24,4 +24,4 @@ Observações
 ======
 
 * Os resultados são exibido em uma janela do browser.
-* Código-fonte do teste: `router/src/app/json-router.ts` 
+* Código-fonte do teste: [json-router.spec.ts](src/app/json-router.spec.ts) 
