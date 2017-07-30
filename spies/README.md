@@ -3,7 +3,7 @@ Como testar usando Spies
 
 Esta solução foi criada a partir de um projeto [Angular](https://angular.io/) com 
 [Typescript](https://www.typescriptlang.org/). Os testes implementados utilizam [Jasmine  Spies](https://jasmine.github.io/edge/introduction.html) 
-para verificar se o processador de menssagens correto foi disparado.
+para verificar se o roteador de mensagens JSON invocou o processador correto.
 
 Pré-requisitos
 ======
