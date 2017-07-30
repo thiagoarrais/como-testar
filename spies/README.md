@@ -15,7 +15,7 @@ Comandos para executar os testes
 ======
 
 ```
-cd router
+cd spies
 npm install
 npm run test
 ```
