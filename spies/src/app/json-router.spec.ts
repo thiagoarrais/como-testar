@@ -1,18 +1,18 @@
 import { JsonRouter } from './json-router';
-import { JsonProcessor, EvenJsonProcessor, OddJsonProcessor } from './json-processor';
+import { JsonProcessor, EvenProcessor, OddProcessor } from './json-processor';
 import { JsonMessage } from './json-message';
 
 describe('JSON Router Testing', () => {
 
   let router: JsonRouter;
-  let evenProcessor: EvenJsonProcessor;
-  let oddProcessor: OddJsonProcessor;
+  let evenProcessor: EvenProcessor;
+  let oddProcessor: OddProcessor;
   
   beforeEach(() => {
     router = new JsonRouter();
 
-    evenProcessor = new EvenJsonProcessor();
-    oddProcessor = new OddJsonProcessor();
+    evenProcessor = new EvenProcessor();
+    oddProcessor = new OddProcessor();
     
     router.addProcessor(evenProcessor);
     router.addProcessor(oddProcessor);
@@ -33,25 +33,25 @@ describe('JSON Router Testing', () => {
     });
 
     it('JSON Message with even code calls even processor', () => {
-        let message = { code: 10, content: 'ten is even'};
+        let evenMessage = { code: 10, content: 'ten is even'};
         
-        router.process(message); 
+        router.process(evenMessage); 
 
         expect(oddProcessor.process).not.toHaveBeenCalled();
 
-        expect(evenProcessor.match).toHaveBeenCalledWith(message);
-        expect(evenProcessor.process).toHaveBeenCalledWith(message);
+        expect(evenProcessor.match).toHaveBeenCalledWith(evenMessage);
+        expect(evenProcessor.process).toHaveBeenCalledWith(evenMessage);
     });
 
     it('JSON Message with odd code calls odd processor', () => {
-        let message = { code: 5, content: 'five is odd' };
+        let oddMessage = { code: 5, content: 'five is odd' };
         
-        let result = router.process(message);        
+        router.process(oddMessage);        
 
         expect(evenProcessor.process).not.toHaveBeenCalled();
 
-        expect(oddProcessor.match).toHaveBeenCalledWith(message);
-        expect(oddProcessor.process).toHaveBeenCalledWith(message);    
+        expect(oddProcessor.match).toHaveBeenCalledWith(oddMessage);
+        expect(oddProcessor.process).toHaveBeenCalledWith(oddMessage);    
     });
 
   });    

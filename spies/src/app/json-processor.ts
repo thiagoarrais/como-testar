@@ -5,7 +5,7 @@ export abstract class JsonProcessor {
     public abstract process(message: JsonMessage): void;
 }
 
-export class EvenJsonProcessor extends JsonProcessor {
+export class EvenProcessor extends JsonProcessor {
     public match(message: JsonMessage): boolean {
         return message.code % 2 == 0; 
     };    
@@ -15,7 +15,7 @@ export class EvenJsonProcessor extends JsonProcessor {
     };
 };
 
-export class OddJsonProcessor extends JsonProcessor {
+export class OddProcessor extends JsonProcessor {
     public match(message: JsonMessage): boolean {
         return message.code % 2 !== 0; 
     };
