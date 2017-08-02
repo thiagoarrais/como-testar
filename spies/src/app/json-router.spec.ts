@@ -37,10 +37,11 @@ describe('JSON Router Testing', () => {
         
         router.process(evenMessage); 
 
-        expect(oddProcessor.process).not.toHaveBeenCalled();
-
         expect(evenProcessor.match).toHaveBeenCalledWith(evenMessage);
+        expect(oddProcessor.match).not.toHaveBeenCalledWith();
+
         expect(evenProcessor.process).toHaveBeenCalledWith(evenMessage);
+        expect(oddProcessor.process).not.toHaveBeenCalled();
     });
 
     it('JSON Message with odd code calls odd processor', () => {
@@ -48,9 +49,10 @@ describe('JSON Router Testing', () => {
         
         router.process(oddMessage);        
 
-        expect(evenProcessor.process).not.toHaveBeenCalled();
-
+        expect(evenProcessor.match).toHaveBeenCalledWith(oddMessage);
         expect(oddProcessor.match).toHaveBeenCalledWith(oddMessage);
+
+        expect(evenProcessor.process).not.toHaveBeenCalled();
         expect(oddProcessor.process).toHaveBeenCalledWith(oddMessage);    
     });
 
