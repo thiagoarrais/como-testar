@@ -1,10 +1,11 @@
 Como testar usando abordagem reactive
 ======
 
-Trata entrada e saidas como Observables
+Trata entrada e saidas como Observables.
 
 Para rodar os testes:
 
+    npm install
     npm test
 
 Código fica em `index.js`
