@@ -1,7 +1,17 @@
-Como testar usando uma abordagem reactive
-=====
+Como testar usando abordagem reactive
+======
 
-_Em breve!_
+Trata entrada e saidas como Observables
 
-Input: um fluxo de mensagens
-Output: dois fluxos de mensagens particionados em par/impar
+Para rodar os testes:
+
+    npm test
+
+Código fica em `index.js`
+
+Teste fica em `spec.js`
+
+Dependencias
+------
+Node (>= ?)
+NPM (>= 5)
