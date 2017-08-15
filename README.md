@@ -16,18 +16,16 @@ para a outra, mas você não precisa ser o grande programadorzão ninja
 poliglota para entender.
 
 Em cada pasta você vai encontrar um README. Eles são guias para que
-você consiga tanto executar os testes como ler o código. Você deve
-sempre começar a explorar cada pasta pelo README.
-
-O README vai indicar onde você encontra os testes e onde encontra o
-código de produção. Leia os dois e [entre no gitter][1] para
-conversarmos.
+você consiga tanto executar os testes como ler o código. O README vai
+indicar onde encontrar o código de teste e código testado. Dê uma olhada
+em tudo e [entre no gitter][1] para conversarmos.
 
 O problema padrão
 -----------------
 Para que nos concentremos nas várias técnicas de teste, escolhemos
 resolver o mesmo problema de várias formas. Assim a gente pode comparar
-soluções e discutir as vantagens e desvantagens de cada uma.
+soluções e discutir cada uma sem entrar em um contexto diferente para
+cada.
 
 Nosso problema padrão é rotear mensagens. Cada mensagem é composta de
 código e de corpo. Cada programa precisa receber mensagens nesse formato
