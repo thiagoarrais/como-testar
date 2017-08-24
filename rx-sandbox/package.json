@@ -1,0 +1,19 @@
+{
+  "name": "como-testar-reactive",
+  "version": "1.0.0",
+  "description": "Como testar usando uma abordagem reactive",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.1",
+    "rxjs": "^5.4.2"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "rx-sandbox": "0.0.4"
+  }
+}
