@@ -9,7 +9,7 @@ Pré-requisitos
 ======
 
 * [Chrome](https://www.google.com/chrome/browser/desktop/index.html) 
-* [Node.js® e npm](https://nodejs.org/en/download/)
+* [Node.js e npm](https://nodejs.org/en/download/)
 
 Comandos para executar os testes 
 ======
